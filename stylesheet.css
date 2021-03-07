@@ -1,65 +1,62 @@
-*{
+* {
     padding: 0;
     margin: 0;
-
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: cornflowerblue;
-
 }
 
-.container{
+.container {
     display: flex;
 }
 
+/* FACE */
 
-    /* FACE */
-
-
-.face{
+.face {
     position: relative;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     background: crimson;
 }
-.face::before{
+
+.face::before {
     content: '';
     position: absolute;
     left: 66px;
-    top: 148px;
-    width: 119px;
-    height: 55px;
-    background: blueviolet;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;;
-    transition: 0.5s;
-}
-
-.face:hover::before{
     top: 167px;
     width: 119px;
     height: 20px;
     background: blueviolet;
+    transition: 0.5s;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;;
+    border-bottom-right-radius: 0px;
 }
 
+.face:hover::before {
+    top: 148px;
+    background: blueviolet;
+    width: 119px;
+    height: 55px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
 
-    /* EYES */
+/* EYES */
 
-.eyes{
+.eyes {
     position: relative;
     top: 55px;
     left: 26px;
     display: flex;
-}    
-.eye{
+}
+
+.eye {
     position: relative;
     width: 60px;
     height: 60px;
@@ -68,23 +65,22 @@ body{
     margin: 1px 18px;
     border-radius: 50%;
 }
-.eye::before{
+
+.eye::before {
     content: '';
     position: absolute;
     top: 55%;
     left: 25px;
-    transform: translate(-60%,-60%);
+    transform: translate(-60%, -60%);
     width: 35px;
     height: 35px;
     background: black;
     border-radius: 50%;
 }
 
+/* ERROR_4s */
 
-    /* ERROR_4s */
-
-
-.error_4{
+.error_4 {
     display: flex;
     width: 250px;
     height: 250px;
@@ -92,7 +88,8 @@ body{
     align-items: center;
     font-size: 250px;
 }
-.error_2nd_4{
+
+.error_2nd_4 {
     display: flex;
     width: 250px;
     height: 250px;
